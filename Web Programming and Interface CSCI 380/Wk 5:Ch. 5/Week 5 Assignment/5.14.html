@@ -1,0 +1,46 @@
+<!-- 5.14 (Transformation with :hover)
+Create a transformation program that includes four images.
+When the user hovers over an image, the size of the
+image should increase by 20%.-->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.12: transitions.html -->
+<!-- Transitions in CSS3. -->
+<html lang="en">
+   <head>
+      <meta charset = "utf-8">
+      <title>5.14 Image Transitions</title>
+      <style type = "text/css">
+         img
+         {
+            margin: 30px;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+         }
+         /* hover is a pseudo-class */
+         img:hover
+         {
+             /* 2, 2 means scaling by 2x for the height and width.
+                1.2 = 100% plus 20%. creating an increase of 20%
+                120% = 100% plus 20%. creating an increase of 20%*/
+            -webkit-transform: scale(120%);
+            -moz-transform: scale(120%);
+            -o-transform: scale(120%);
+            transform: scale(120%);
+         }
+      </style>
+   </head>
+   <body>
+      <img src = "dog.jpeg" width = "76" height = "100"
+         alt = "Image size increase">
+      <img src = "lake.webp" width = "76" height = "100"
+         alt = "Image size increase">
+      <img src = "SchoolisGreat.webp" width = "76" height = "100"
+         alt = "Image size increase">
+      <img src = "wolf.webp" width = "76" height = "100"
+         alt = "Image size increase">
+   </body>
+</html>

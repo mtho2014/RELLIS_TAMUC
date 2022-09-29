@@ -1,0 +1,32 @@
+<!-- Assignment 3.7 Creating an Autocomplete Form -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New HTML5 autocomplete Attribute and datalist Element</title>
+    </head>
+
+    <body>
+        <h1>Autocomplete Search Demo</h1>
+
+        <!-- autocomplete on -->
+        <form method = "post" autocomplete="on">
+            <p><label>Search:
+                <!-- remembers previous search entries -->
+                <input type="search" name = "query" id = "query"
+                    placeholder="search here" />
+                </label> (Enter search query)
+
+<!--        &lt;!&ndash; alternative way &ndash;&gt;-->
+<!--        <form action="demo_form.asp" method="get" autocomplete="on">-->
+<!--            Month Name:-->
+<!--            <label>-->
+<!--                <input type="text" name="fname">-->
+<!--            </label><br>-->
+<!--        </form>-->
+            <p><input type = "submit" value = "Submit" />
+                <input type = "reset" value = "Clear" /></p>
+        </form>
+    </body>
+</html>

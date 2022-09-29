@@ -1,0 +1,32 @@
+<!-- 5.9 (Animation) Create an infinite animation of an element
+moving in a square pattern. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.9- Animation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #dd1144;
+            position: relative;
+            animation-name: infinite_animation;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+        }
+
+        @-webkit-keyframes infinite_animation {
+            0% {left: 0; top: 0;}
+            25% {left: 300px; top: 0;}
+            50% {left: 300px; top: 300px;}
+            75% {left: 0; top: 300px;}
+            100% {left: 0; top: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
